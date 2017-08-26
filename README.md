@@ -1,2 +1,5 @@
 # PorT-Block---Proof-or-Test-Block-for-Simulink-Design-Verifier
 A Simulink Design Verifier block to switch between proof and test and set requirement tags as well.
+
+There is a requirement that the proof or test be available in the modified model that will be used for proving or testing the design. The design models are normally under configuration control and the addition of SLDV block corrupts this configuration. The process to be followed in such cases is to have a modified set of blocks with the proof or test subsystem. It would be a time saver if both Proof and Test Objective be available as single block. This is possible by using the P and O block and enabling or disabling this option from a matlab script. There is an additional requirement that the requirement numbers be mentioned in the proof or test coverage report. This as present is not possible. The PorT block enables this.
+There is a function file associated with this block that is called to set the parameters. A batch file is available that can be changed to meet individual requirements. This batch file enables the proving and test case generation as the case may be automatically.
